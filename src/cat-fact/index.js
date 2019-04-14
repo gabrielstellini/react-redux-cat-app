@@ -28,7 +28,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         onButtonClick: () => {
             dispatch(fetchCatFact(dispatch));
-            dispatch(fetchCatImage(dispatch));
+            // dispatch(fetchCatImage(dispatch));
         }
     }
 };
@@ -36,7 +36,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = state => {
     return {
         fact: selectCatFact(state),
-        image: selectCatImage(state)
+        // image: selectCatImage(state)
     }
 };
 
