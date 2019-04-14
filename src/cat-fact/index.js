@@ -17,8 +17,8 @@ class CatFact extends Component {
         debugger;
         return (
         <div className={'cat-fact'}>
-            <img alt={'cat'} src={''}/>
-            <h1>FACT: {JSON.stringify(this.props)}</h1>
+            {/*<img alt={'cat'} src={''}/>*/}
+            <h1>FACT: {this.props.fact}</h1>
             <button onClick={() => this.props.onButtonClick()}>New Cat Fact</button>
         </div>)
     }
